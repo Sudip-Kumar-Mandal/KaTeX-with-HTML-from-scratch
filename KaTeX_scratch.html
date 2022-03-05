@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>TeX Examples</title>
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css" integrity="sha384-MlJdn/WNKDGXveldHDdyRP1R4CTHr3FeuDNfhsLPYrq2t0UBkUdK2jyTnXPEK1NQ" crossorigin="anonymous">
+	<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.js" integrity="sha384-VQ8d8WVFw0yHhCk5E8I86oOhv48xLpnDZx5T9GogA/Y84DcCKWXDmSDfn13bzFZY" crossorigin="anonymous"></script>
+	<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"></script>
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			renderMathInElement(document.body, {
+			// customised options
+			// • auto-render specific keys, e.g.:
+			delimiters: [
+				{left: '$$', right: '$$', display: true},
+				{left: '$', right: '$', display: false},
+				{left: '\\(', right: '\\)', display: false},
+				{left: '\\[', right: '\\]', display: true}
+			],
+			// • rendering keys, e.g.:
+			throwOnError : false
+			});
+		});
+	</script>
+
+</head>
+<body>
+
+<ul>
+	<li><p> at 1400s books were written by hand </p></li>
+	<li><p> for 100s of years, publishers perfected the craft of mechanical, metal typesetting, reached its peak in 1960s - 1970s </p></li>
+	<li><p> digital typesetting came </p></li>
+	<li><p> led to many quality improvements, some felt the opp., like  </p></li>
+	
+	<li><p> **Donald Knuth (1938)** </p></li>
+	<li><p> made his life's work preserving the old-world craftmanship of mechanical, metal typesetting in digital form. </p></li>
+	<li><p> Created a digital typesetting system called TeX </p></li>
+	<li><p> first released in 1978 </p></li>
+	<li><p> Author of "The Art of Computer Programming" </p></li>
+	<li><p> Own digital typesetting system to preserve the old school mechanical process and make it free. </p></li>
+	<li><p> Generous gift to humanity </p></li>
+	<li><p> Called it **TeX** , which is Greek letters </p></li>
+	<li><p> Tau </p></li>
+	<li><p> Epsilon </p></li>
+	<li><p> Chi </p></li>
+	<li><p> **TeX**: abbreviation for the Greek word for art and craft, also root for the English word technical </p></li>
+	<li><p> Best known for typesetting of Math equations </p></li>
+	<li><p> Rescued 100s of years of publishing craftmanship from being lost </p></li>
+	
+		LaTeX
+	
+	<li><p> Software system for document preparation. </p></li>
+	<li><p> early 1980s </p></li>
+	<li><p> became a standard for creating publications particularly in academia </p></li>
+	<li><p> one-stop-shop for publishers, allowing users to create covers, table of contents, indexes, bibliographies and more. </p></li>
+	<li><p> massive software package with 100s of files </p></li>
+	<li><p> Created for paper publications, before the WWW </p></li>
+	
+		KaTeX
+	
+	<li><p> A fast, lightweight JavaScript library for rendering math equations on the web using the TeX typesetting standards. </p></li>
+	<li><p> created in 2014 by Emily Eisenberg and Sophie Alpert, while they were working at the Khan Academy </p></li>
+	<li><p> K.A presumably refers to the Khan Academy </p></li>
+	<li><p> allows users to use the established TeX syntax in plain HTML documents, KaTeX converts the TeX syntax into MathML and render it using CSS to match the TeX typesetting. </p></li>
+	
+		MathML
+	
+	<li><p> Mathematical Markup Language </p></li>
+	<li><p> used for describing mathematical notations and capturing both its structure and content </p></li>
+	<li><p> been around since 1998 and is currently part of HTML5 </p></li>
+	<li><p> cumbersome to use and doesn't look very good. </p></li>
+	<li><p> only way to use math equations using HTML </p></li>
+	<li><p> so, there are several libraries that will convert TeX syntax into MathMLa and render it using TeX typesetting </p></li>
+	<li><p> KaTeX is one of those libraries </p></li>
+</ul>
+
+	<hr>
+
+	<h1>$ \TeX $ Examples</h1>
+
+<h2>Basic Syntax</h2>
+
+<ul>
+	<li><p> Text Mode vs. Math Mode </p></li>
+	
+	<li><p> $...$ for Inline (aka Mathematics Mode) </p></li>
+	
+	<li><p> Inline vs. Display </p></li>
+	
+	<li><p> $$...$$ for Display (aka Display Mathematics) </p></li>
+	
+	<li><p> \ for symbols and functions </p></li>
+	
+	<li><p> {} used with functions </p></li>
+	
+	<li><p> whitespace is ignored (for the most part) </p></li>
+</ul>
+
+<p> 	This is Text Mode. </p>
+
+<p> 	$ This is what characters look like inside Math Mode. $ </p>
+
+<p> 	$ \text{This is how to display text inside Math Mode.} $ </p>
+
+<p> 	$$ \text{Display Mode is Centered on a separate line.} $$ </p>
+
+	<hr>
+
+<h2> Basic Math </h2>
+
+<p> 	Text Mode: 1 + 1 = 2 </p>
+
+<p> 	Math Mode Inline: $ 1 + 1 = 2 $ </p>
+
+<p> 	Math Mode Display: $$ 1 + 1 = 2 $$ </p>
+
+	$$1+1=2$$
+
+	$$ 2 - 3 = -1 $$ <!-- Spaces are only for readability -->
+
+	<hr>
+
+	$$ 2 x 3 = 6 $$
+
+	$$ 2 \times 3 = 6 $$
+
+	<hr>
+
+	$$ 5 / 2 = 2.5 $$
+
+	$$ 5 \div 2 = 2.5 $$
+
+	<hr>
+
+	$$ \frac{numerator}{denominator} $$
+
+	$$ \frac{1}{2} = 0.5 $$
+
+	$$ \frac{3}{4} = 0.75 $$
+
+	<hr>
+
+	$$ 2^3 = 8 $$
+
+	$$ \sqrt{4} = 2 $$
+
+	$$ \sqrt[3]{8} = 2 $$
+
+	<hr>
+
+	$$ t_0 $$
+
+	$$ a_12 $$
+
+	<hr>
+
+	Wrong
+	$$ $100 $$
+
+	$$ \$100 $$
+
+	In math mode the % sign is used for comments
+	$$ 100% $$
+
+	$$ 100\% $$
+
+	<hr>
+
+	In math mode, you can use multiple lines
+<li><p> don't have any blank rows between $$ signs. </p></li>
+<li><p> `\\` indicates new line </p></li>
+
+	$$
+		% this is a comment that will not render
+		this is text \\ % this is how to add a new line
+		\text{this is also text}
+	$$
+
+	<hr>
+
+<h2> Algebra </h2>
+
+	$$ x + 2 = 5 $$
+
+	$$ x = 5 - 2 $$
+
+	$$ x = 3 $$
+
+	$$
+		x + 2 = 5 \\
+		x = 5 - 2 \\
+		x = 3
+	$$
+
+	<hr>
+
+	$$ ax^2 + bx + c = 0 $$
+
+	$$ x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a} $$
+
+	The syntax is designed to mimic how humans read it out loud.
+
+	<hr>
+
+<h2> Geometry </h2>
+
+	$$ a^2 + b^2 = c^2 $$
+
+	$$ A = \pi r^2 $$
+
+	$$ 30\degree + 60\degree + 90\degree = 180\degree $$
+
+	$\degree\degree\degree$
+
+	<hr>
+
+<h2> Trigonometry </h2>
+
+	$$ \sin A = \frac{\text{opposite}}{\text{hypotenuse}} = \frac{a}{c} $$
+
+	$$ \cos A = \frac{\text{adjacent}}{\text{hypotenuse}} = \frac{b}{c} $$
+
+	$$ \tan A = \frac{\text{opposite}}{\text{adjacent}} = \frac{a}{b} = \frac{a/c}{b/c} = \frac{\sin A}{\cos A} $$
+
+	<hr>
+
+<h2> Calculus </h2>
+
+	$$ \lim_{h \rarr 0} \frac{f(a + h) - f(a)}{h} $$
+
+	$$ 
+		\lim _ { h \rarr 0 }	\\
+		lim _ { h \rarr 0 }		\\
+		\rarr \larr	\darr \uarr \\
+	$$
+
+	<hr>
+
+	$$
+		y = x^2 \\
+		\frac{dy}{dx} = 2x
+	$$
+
+	<hr>
+
+	$$ \int_a^b f(x)dx = F(b) - F(a) $$
+
+	$$ \frac{d}{dx} \int_a^x f(t)dt = f(x) $$
+
+	<hr>
+
+<h2> Physics </h2>
+
+	$$ \sum \bold{F} = 0 \Leftrightarrow \frac{\text{d}\bold{v}}{\text{d}t} = 0 $$
+
+	$$ \bold{F} = m\bold{a} $$
+
+	$$ \bold{F}_\textit{\textsf{A}} = \bold{-F}_\textit{\textsf{B}} $$
+
+	<hr>
+
+	$$ normal text $$
+
+	$$ \text{normal text} $$
+
+	$$ \bold{\text{bold text}} $$
+
+	$$ \textit{italic text} $$
+
+	$$ \textsf{sans-serif text} $$
+
+	$$ \Leftrightarrow \leftrightarrow $$
+
+	<hr>
+
+<h2> Statistics </h2>
+
+	Arithmetic Mean
+
+	$$ \bar{x} = \frac{1}{n} \Bigg(\sum_{i=1}^n x_i \Bigg) = \frac{x_1 + x_2 + \cdots + x_n}{n} $$
+
+	Corrected sample standard deviation
+
+	$$ s = \sqrt{ \frac {1} {N-1} \sum _ {i=1} ^ N (x _ i - \bar x) ^ 2} $$
+
+	<hr>
+
+	<h4>Find all syntaxes: <h4>
+
+	$ ( \big( \Big( \bigg( \Bigg( $ [$\KaTeX$](https://katex.org/docs/supported.html "Syntaxes") $ \Bigg) \bigg) \Big) \big) ) $
+
+	<hr>
+
+<h2> Linear Algebra </h2>
+
+	Column Vector
+
+	$$
+		\begin{bmatrix}
+			a_1 \\
+			\vdots \\
+			a_m
+		\end{bmatrix}
+	$$
+
+	To add columns to matrix, use & between column entries
+
+	$$
+		\begin{bmatrix}
+			a_{1,1} & \cdots & a_{1,n} \\
+			\vdots & \ddots & \vdots \\
+			a_{m,1} & \cdots & a_{m,n}
+		\end{bmatrix}
+	$$
+
+	$$
+		\begin{alignedat}{3}
+			2  & x + y \space- & z & = 		  & 8 \\
+			-3 & x - y + 2	   & z & = \space & -11 \\
+			-2 & x + y + 2	   & z & = 		  & -3
+		\end{alignedat}
+	$$
+
+	$$
+		M =
+			\begin{bmatrix}
+				\begin{aligned}
+					&2 & &1 & -&1\space \\
+					\space-&3 & -&1 & &2 \\
+					-&2 & &1 & &2
+				\end{aligned}
+			\end{bmatrix}
+	$$
+
+<h2> Other </h2>
+
+	$$ \infty $$
+
+	$$
+		\alpha \beta \gamma \delta \\
+		\epsilon \theta \iota \mu \\
+		\sigma \phi \varphi \omega
+	$$
+
+	$$
+		\TeX \\
+		\xcancel{\LaTeX} \\
+		\KaTeX
+	$$
+
+
+	<hr>
+	<hr>
+
+<ul>
+	<li><p> HTML file converted from markdown file is around 35 times larger in size. </p></li>
+	<li><p> This can result in bloated web pages. </p></li>
+	<li><p> We can create HTML files from scratch which will result in much smaller HTML files. </p></li>
+	<li><p> Go to https://katex.org/docs/autorender.html and copy the paragraph. </p></li>
+	<li><p> This will allow to render math equations on web without MathML, by linking the KaTeX library, so you won't have to install any software </p></li>
+</ul>
+
+	**********************************
+	**********************************
+	**********************************
+	**********************************
+	**********************************
+	**********************************
+	**********************************
+	**********************************
+	**********************************
+	**********************************
+	**********************************
+	**********************************
+	
+</body>
+</html>
